@@ -4,8 +4,18 @@
 
 %!target: html
 %!options: --toc
+
+%!style(tex): geometry
+%!style(tex): inputenc
+%!style(tex): babel
+
 %!postproc(html): \-\-\- &mdash;
 %!postproc(html): \-\- &ndash;
+
+%!postproc(tex): (\\usepackage)(\{geometry\}) \1[a4paper,margin=1cm]\2
+%!postproc(tex): (\\usepackage)(\{inputenc\}) \1[utf8]\2
+%!postproc(tex): (\\usepackage)(\{babel\}) \1[russian]\2
+%!postproc(tex): (\\includegraphics)(\{img\/overview.png\}) \1[scale=0.8]\2
 
 
 %====================================================================
